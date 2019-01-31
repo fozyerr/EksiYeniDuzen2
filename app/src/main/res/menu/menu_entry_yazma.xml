@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fatih.eksiyeniduzen.EntryActivity">
+
+
+    <item android:icon="@drawable/silmebuton"
+        android:id="@+id/temizle"
+        android:title="@string/kenarsil"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:icon="@drawable/sakla"
+        android:id="@+id/sakla"
+        android:title="@string/kenardur"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item android:icon="@drawable/send"
+        android:id="@+id/gonder"
+        android:title="@string/yolla"
+        app:showAsAction="ifRoom"
+
+        />
+</menu>

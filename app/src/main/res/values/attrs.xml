@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Renkler">
+        <attr name="normalText" format="color"/>
+        <attr name="spanText" format="color"/>
+        <attr name="httpText" format="color"/>
+        <attr name="baslikSayiBackground" format="color"/>
+        <attr name="olayText" format="color"/>
+        <attr name="baslikText" format="color"/>
+        <attr name="cerceve" format="color"/>
+    </declare-styleable>
+</resources>

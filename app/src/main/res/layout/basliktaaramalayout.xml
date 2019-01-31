@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/topluluk"
+           android:layout_centerHorizontal="true"
+
+            >
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/badientryler"
+            android:layout_marginTop="10dp"
+
+            android:text="badi entry'leri"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:background="@drawable/butonarkaplan"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/badientryler"
+            android:id="@+id/bugunentryler"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"
+            android:text="bugün"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/butonarkaplan"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/badientryler"
+            android:id="@+id/sukelaentry"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:text="ekşi şeyler'de"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/butonarkaplan"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/sukelaentry"
+            android:layout_below="@+id/badientryler"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linkentry"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"
+            android:text="linkler"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/butonarkaplan"
+            />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/linkentry"
+                android:layout_marginTop="10dp"
+                android:id="@+id/benimkiler"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"
+                android:text="benimkiler"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/butonarkaplan"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/autot"
+            android:layout_below="@+id/topluluk"
+            android:hint="kelime ya da @yazar"
+            android:layout_marginTop="5dp"
+            android:dropDownWidth="280dp"
+            android:dropDownHeight="wrap_content"
+            android:dropDownHorizontalOffset="-20dp"
+            android:textSize="16sp"
+            android:completionThreshold="1"
+            android:id="@+id/aramaedit"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

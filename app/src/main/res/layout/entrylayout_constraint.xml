@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="3dp"
+    android:id="@+id/constraint_entry"
+    android:background="@drawable/entryarkaplani">
+
+    <TextView
+        android:id="@+id/ozelentry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:textColor="@color/eksirenk"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/favresim"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/favresim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/favoritext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/favresim"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/entry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="?attr/normalText"
+        android:textColorHighlight="@color/eksirenk"
+        android:textIsSelectable="true"
+        android:textSize="14sp"
+        android:theme="@style/eksirenkler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favoritext" />
+
+    <View
+        android:id="@+id/ikii"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        app:layout_constraintBottom_toTopOf="@+id/entry" />
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        app:layout_constraintTop_toBottomOf="@+id/entry" />
+
+    <TextView
+        android:id="@+id/yazaradi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry" />
+
+    <TextView
+        android:id="@+id/entryzaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yazaradi" />
+
+    <ImageButton
+        android:id="@+id/entrybuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/diger"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/dots_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry" />
+
+    <TextView
+        android:id="@+id/yorumtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/yorum"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="12.5sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/entrybuton"
+        app:layout_constraintTop_toBottomOf="@+id/entry" />
+
+
+</android.support.constraint.ConstraintLayout>

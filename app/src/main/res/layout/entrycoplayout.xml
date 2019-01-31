@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relat"
+    android:background="@drawable/entryyapisiarkaplan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="6dp"
+    android:paddingBottom="8dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ozelentry"
+        android:layout_marginStart="5dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/eksirenk"
+        android:background="?android:selectableItemBackground"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/silinmezamani"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#666666"
+        android:layout_below="@+id/ozelentry"
+        android:layout_alignParentStart="true"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/silinmezamani"
+        android:textSize="11.5dp"
+        android:clickable="true"
+        android:textIsSelectable="true"
+        android:textColorHighlight="@android:color/holo_green_light"
+        android:theme="@style/autot"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/entry"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <View
+        android:id="@+id/ikii"
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:layout_alignTop="@+id/entry"
+        android:background="#c0c0c0" />
+
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:layout_below="@+id/entry"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/entryzaman"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="düzelt"
+        android:id="@+id/duzelttext"
+        android:layout_toStartOf="@+id/canlandirtext"
+        android:layout_below="@+id/entry"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="canlandır"
+        android:id="@+id/canlandirtext"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/entry"
+        android:layout_toStartOf="@+id/siltext"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sil"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/entry"
+        android:id="@+id/siltext"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="?android:selectableItemBackground"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+</RelativeLayout>
+

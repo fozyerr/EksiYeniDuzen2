@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:id="@+id/item"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#666"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="50dp"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:id="@+id/favyazar"
+        />
+
+</RelativeLayout>

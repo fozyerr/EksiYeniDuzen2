@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatih.eksiyeni.YazarProfili$PlaceholderFragment"
+    android:layout_marginTop="50dp"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/ustbilgiler"
+
+       >
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/yazarkunye"
+           android:layout_alignParentStart="true"
+           android:textAlignment="center"
+           android:textColor="@android:color/white"
+           android:layout_marginTop="10dp"
+
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/yazartanim"
+           android:layout_below="@+id/yazarkunye"
+           android:textColor="@android:color/white"
+           android:textAlignment="center"
+           android:layout_marginTop="10dp"
+           android:clickable="true"
+           />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:layout_marginStart="15dp"
+           android:layout_marginTop="8dp"
+           >
+
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/badiekle"
+           android:visibility="gone"
+           android:text="badi ekle"
+           android:textAllCaps="false"
+
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAllCaps="false"
+           android:visibility="gone"
+           android:layout_toEndOf="@id/badiekle"
+           android:text="badilerden çıkar"
+           android:id="@+id/badicikar"
+
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/engelle"
+           android:textAllCaps="false"
+           android:visibility="gone"
+           android:text="engelle"
+           android:layout_toEndOf="@id/badicikar"
+
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/engelkaldir"
+
+           android:layout_toEndOf="@id/engelle"
+           android:visibility="gone"
+           android:text="engellemeyi bırak"
+           android:textAllCaps="false"
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/baslikengelle"
+           android:visibility="gone"
+           android:text="başlıklarını engelle"
+           android:textAllCaps="false"
+          android:layout_toEndOf="@id/engelkaldir"
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/baslikengelkaldir"
+           android:text="başlıklarını göster"
+           android:visibility="gone"
+           android:layout_toEndOf="@id/baslikengelle"
+           android:textAllCaps="false"
+           />
+
+       </RelativeLayout>
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ustbilgiler"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kunyebaslik"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:text="KÜNYE BAŞLIK"
+            />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="10dp"
+           android:id="@+id/kunyeentry"
+           android:textColor="@android:color/black"
+           android:layout_below="@+id/kunyebaslik"
+           android:text="KÜNYE ENTRY"
+           android:layout_marginStart="30dp"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/entrydate"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/kunyeentry"
+            android:layout_marginStart="30dp"
+            android:text="ENTRY DATE"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

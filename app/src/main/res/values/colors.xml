@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimary">#222222</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#84C44E</color>
+    <color name="yenitoolbar">#222222</color>
+    <color name="colorAccenteski">#FF4081</color>
+    <color name="siyah">#000000</color>
+    <color name="eksirenk">#84C44E</color>
+    <color name="koyutheme">#33343B</color>
+    <color name="aciktheme">#F0F0F0</color>
+    <color name="whatsappArkaplan">#dcf8c6</color>
+    <color name="whatsappText">#262626</color>
+    <color name="eksimavi">#0027b8</color>
+    <color name="acikgri">#BEBEBE</color>
+</resources>

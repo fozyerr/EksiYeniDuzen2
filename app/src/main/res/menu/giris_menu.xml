@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/basliklar" android:icon="@drawable/basliklar"
+            android:title="@string/baslik"
+            />
+        <item android:id="@+id/ara" android:icon="@drawable/aramenu"
+            android:title="@string/ara" />
+
+        <item android:id="@+id/arsiv" android:icon="@drawable/arsiv"
+            android:title="@string/arsiv" />
+
+        <item android:id="@+id/secenek" android:icon="@drawable/ayarlar"
+            android:title="@string/secenek" />
+
+
+    </group>
+
+    <item android:title="@string/yazar">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/ben" android:icon="@drawable/ben"
+                    android:title="@string/ben" />
+
+                <item android:id="@+id/mesaj" android:icon="@drawable/mesajlar"
+                    android:title="@string/mesaj" />
+
+                <item android:id="@+id/olay" android:icon="@drawable/olay"
+                    android:title="@string/olay" />
+
+                <item android:id="@+id/ayar" android:icon="@drawable/uygulama_ayarlari"
+                    android:title="@string/ayar" />
+
+                <item android:id="@+id/cop" android:icon="@drawable/cop"
+                    android:title="@string/cop" />
+
+                <item android:id="@+id/badiengel" android:icon="@drawable/badiengelli"
+                    android:title="@string/badiengel"
+                    />
+
+            </group>
+        </menu>
+
+    </item>
+
+
+
+
+
+
+    <item android:title="@string/cikis">
+        <menu>
+
+            <item android:id="@+id/cik" android:icon="@drawable/cikis"
+                android:title="@string/terk"
+                />
+        </menu>
+    </item>
+
+
+</menu>

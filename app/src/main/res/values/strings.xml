@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">EksiYeniDuzen</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <string name="acik">Açık</string>
+    <string name="kapali">Kapalı</string>
+    <string name="favlayan">favorileyenler</string>
+    <string name="sonsayfa">Son sayfaya git</string>
+    <string name="ilksayfa">İlk sayfaya git</string>
+    <string name="uye">Üye</string>
+    <string name="giris">Giriş</string>
+    <string name="yenile">Yenile</string>
+    <string name="profgit">Profile Git</string>
+    <string name="listcikar">Bu listeden çıkar</string>
+    <string name="seceneklist">Seçenek ikonu</string>
+    <string name="arsiv">Arşiv</string>
+    <string name="yorumlar">yorumlar</string>
+    <string name="hayir">hayır</string>
+    <string name="evet">evet</string>
+    <string name="sorunsallar">sorunsallar</string>
+    <string name="sil">Sil</string>
+    <string-array name="basliklar">
+        <item>Bugün</item>
+        <item>gündem</item>
+        <item>tarihte bugün</item>
+        <item>spor</item>
+        <item>ilişkiler</item>
+        <item>siyaset</item>
+        <item>seyahat</item>
+        <item>otomotiv</item>
+        <item>tv</item>
+        <item>anket</item>
+        <item>bilim</item>
+        <item>edebiyat</item>
+        <item>eğitim</item>
+        <item>ekonomi</item>
+        <item>ekşi-sözlük</item>
+        <item>haber</item>
+        <item>havacılık</item>
+        <item>magazin</item>
+        <item>moda</item>
+        <item>motosiklet</item>
+        <item>müzik</item>
+        <item>oyun</item>
+        <item>programlama</item>
+        <item>sağlık</item>
+        <item>sanat</item>
+        <item>sinema</item>
+        <item>spoiler</item>
+        <item>tarih</item>
+        <item>teknoloji</item>
+        <item>yeme-içme</item>
+        <item>başıboşlar</item>
+        <item>video</item>
+    </string-array>
+
+
+    <string-array name="basliklarLogin">
+        <item>Bugün</item>
+        <item>gündem</item>
+        <item>tarihte bugün</item>
+        <item>yazdıkları</item>
+        <item>favladıkları</item>
+        <item>son</item>
+        <item>kenar</item>
+        <item>çaylaklar</item>
+        <item>spor</item>
+        <item>ilişkiler</item>
+        <item>siyaset</item>
+        <item>seyahat</item>
+        <item>otomotiv</item>
+        <item>tv</item>
+        <item>anket</item>
+        <item>bilim</item>
+        <item>edebiyat</item>
+        <item>eğitim</item>
+        <item>ekonomi</item>
+        <item>ekşi-sözlük</item>
+        <item>haber</item>
+        <item>havacılık</item>
+        <item>magazin</item>
+        <item>moda</item>
+        <item>motosiklet</item>
+        <item>müzik</item>
+        <item>oyun</item>
+        <item>programlama</item>
+        <item>sağlık</item>
+        <item>sanat</item>
+        <item>sinema</item>
+        <item>spoiler</item>
+        <item>tarih</item>
+        <item>teknoloji</item>
+        <item>yeme-içme</item>
+        <item>başıboşlar</item>
+        <item>video</item>
+    </string-array>
+
+
+    <string-array name="sorunsalspinner">
+        <item>şükela</item>
+        <item>yeniden eskiye</item>
+        <item>yanıt sayısı</item>
+
+    </string-array>
+
+    <string-array name="aramaspinner">
+        <item>Yeniden eskiye</item>
+        <item>Alfabetik</item>
+        <item>Dolu dolu</item>
+
+    </string-array>
+
+    <string name="yukleniyor">Yükleniyor...</string>
+    <string name="bir">1</string>
+    <string name="aramazsan">Aramazsan arama yar</string>
+    <string name="diyez">#</string>
+    <string name="title_activity_yazar">YazarActivity</string>
+    <string name="title_activity_arama">AramaActivity</string>
+    <string name="artioy">Artı oy</string>
+    <string name="eksioy">Eksi oy</string>
+    <string name="favresim">Favori</string>
+    <string name="diger">Diğer seçenekler</string>
+    <string name="baslik">Başlıklar</string>
+    <string name="ara">Ara</string>
+    <string name="stat">İstatistikler</string>
+    <string name="ayar">Ayarlar</string>
+    <string name="ben">Ben</string>
+    <string name="mesaj">Mesajlar</string>
+    <string name="olay">Olaylar</string>
+    <string name="cikis">Çıkış</string>
+    <string name="kapansinmi">kapansın mı</string>
+    <string name="yazar">Yazar</string>
+    <string name="secenek">Uygulama Ayarları</string>
+    <string name="badiengel">Badi/Engellenmiş</string>
+    <string name="cop">Çöp</string>
+    <string name="terk">Terk</string>
+    <string name="kenardur">kenarda dursun</string>
+    <string name="kenarsil">kenardakini sil</string>
+    <string name="yolla">gönder moruq</string>
+    <string name="copsil">sildiğim entry\'leri çöpe atmadan komple sil</string>
+    <string name="copbosalt">çöpü boşalt</string>
+    <string name="copbosaltma">çöp boşaltılsın mı</string>
+    <string name="eksiseylr">entry\'lerim ekşi şeyler\'de kullanılmasın</string>
+    <string name="mesajyok">mesajla falan işim olmaz</string>
+    <string name="badimesaj">bana sadece badilerim mesaj atabilsi</string>
+    <string name="on">10</string>
+    <string name="kime">kime</string>
+    <string name="mesajat">mesaj</string>
+    <string name="mesajyolla">mesaj yolla</string>
+    <string name="arsivle">arşivle</string>
+    <string name="mesajsil">sil</string>
+    <string name="entryyazmahint">bu başlık hakkında bilgi verin</string>
+    <string name="mesajlasma">gelen kutusu</string>
+    <string name="mesajyollanamaz">bu yazara mesaj yollanamıyor</string>
+    <string name="tema">tema</string>
+    <string name="yanityok">yanıt yok</string>
+    <string name="yanitlar">yanıtlar</string>
+    <string name="entrykenara">entry kenarda dursun mu</string>
+    <string name="dursun">dursun</string>
+    <string name="durmasin">durmasın</string>
+    <string name="sorusor">soru sor</string>
+    <string name="yanitver">yanıt ver</string>
+
+</resources>

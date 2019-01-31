@@ -1,0 +1,23 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+
+
+    android:id="@+id/ayrac"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:layout_centerInParent="true"
+    android:layout_marginStart="40dp"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:textSize="17sp"
+    android:layout_marginBottom="10dp"
+    android:textAppearance="?android:attr/textAppearance"
+    android:textColor="@android:color/secondary_text_light"
+    />
+
+</RelativeLayout>

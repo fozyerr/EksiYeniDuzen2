@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/basliklar" android:icon="@drawable/basliklar"
+            android:title="@string/baslik"
+            />
+        <item android:id="@+id/ara" android:icon="@drawable/aramenu"
+            android:title="@string/ara" />
+
+        <item android:id="@+id/arsiv" android:icon="@drawable/arsiv"
+            android:title="@string/arsiv"
+            />
+
+        <item android:id="@+id/giris" android:icon="@drawable/giris"
+            android:title="@string/giris" />
+
+    </group>
+
+
+</menu>

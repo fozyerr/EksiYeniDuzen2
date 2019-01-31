@@ -1,0 +1,28 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secenekresim"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/seceneklist"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secenektext"
+        android:gravity="center|start"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_toEndOf="@+id/secenekresim"
+        android:layout_marginStart="32dp"
+        />
+
+    </RelativeLayout>
+

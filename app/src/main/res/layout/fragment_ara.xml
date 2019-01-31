@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/kelimeler"
+        android:hint="Kelimeler"
+        android:theme="@style/autot"
+        android:inputType="textNoSuggestions"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        />
+    <AutoCompleteTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Yazar"
+        android:id="@+id/yazar"
+        android:inputType="textNoSuggestions"
+        android:theme="@style/autot"
+        android:layout_below="@+id/kelimeler"
+        android:completionThreshold="1"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ilktarih"
+        android:layout_below="@+id/yazar"
+        android:hint="Şu tarihten beri"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ikincitarih"
+        android:layout_below="@+id/ilktarih"
+        android:hint="Şu tarihe kadar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerInParent="true"
+
+        />
+    <CheckBox
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Güzelinden"
+        android:id="@+id/guzel"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/ikincitarih"
+        android:theme="@style/checkBoxStyle"
+        android:layout_centerInParent="true"
+        />
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/secenek"
+        android:layout_below="@+id/guzel"
+        android:spinnerMode="dropdown"
+        android:entries="@array/aramaspinner"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secenek"
+        android:id="@+id/araartik"
+        android:layout_centerInParent="true"
+        android:text="Ara"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/butonarkaplan"
+        />
+
+
+
+
+
+
+</RelativeLayout>

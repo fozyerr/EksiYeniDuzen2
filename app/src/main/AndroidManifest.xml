@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fatih.eksiyeniduzen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:name=".LeakTespiti"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EntryActivity"
+            android:label="@string/title_activity_entry"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            >
+
+              <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".YazarActivity"
+            android:label="@string/title_activity_yazar"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity
+            android:name=".AramaActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_arama"
+            android:theme="@style/AramaStyle"
+            android:configChanges="orientation|screenSize"
+            />
+        <activity android:name=".EntryYazmaActivity" />
+        <activity
+            android:name=".FavlayanlarActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            />
+
+        <receiver
+            android:name=".BroadcastYakalama"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ilkbroadcast" />
+            </intent-filter>
+        </receiver>
+      <!-- <receiver android:name=".ServisArsivleme$Bro"
+           android:enabled="true"
+           />
+        -->
+        <service
+            android:name=".ServisArsiv"
+            android:exported="false" />
+        <service
+            android:name=".ServisArsivleme"
+            android:enabled="true"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

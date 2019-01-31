@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/ust"
+        android:visibility="gone"
+        >
+
+        <!--  DROPDOWNHEIGHT ESKIDEN = 245dp   -->
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/aramayeri"
+            android:hint="@string/aramazsan"
+            android:imeOptions="actionSearch"
+            android:theme="@style/autot"
+            android:inputType="textNoSuggestions"
+            android:dropDownHorizontalOffset="-45dp"
+            android:dropDownHeight="wrap_content"
+            android:dropDownWidth="330dp"
+            android:completionThreshold="1"
+            android:layout_alignParentStart="true"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kapa"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/kapat"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/kapali"
+            />
+
+        <!--
+         <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kapa"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/kapat"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/kapali"
+            />
+
+       -->
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

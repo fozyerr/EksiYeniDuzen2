@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    >
+    <!--  BAŞLIK TEXTVIEWİNİN TEXT RENGİ ADAPTÖRÜN İÇİNDE BELİRLENİYOR SİYAH VEYA GRİ (OLAY VE NORMAL TEXT) -->
+
+
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="33dp"
+        android:id="@+id/entrysayi"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="?attr/baslikText"
+        android:gravity="center"
+        android:background="@drawable/entrysayiarkaplan"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="9dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_toEndOf="@+id/entrysayi"
+        android:layout_marginStart="10dp"
+        android:id="@+id/basliktext"
+
+         android:gravity="center|start"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="11dp" />
+
+
+</RelativeLayout>

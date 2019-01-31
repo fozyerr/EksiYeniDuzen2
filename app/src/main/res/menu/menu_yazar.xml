@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fatih.eksiyeniduzen.YazarActivity">
+    <item
+        android:id="@+id/arama"
+        android:orderInCategory="100"
+        android:icon="@drawable/arama"
+        android:title="@string/ara"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mesajgonder"
+        android:orderInCategory="100"
+        android:icon="@drawable/mesajgonder"
+        android:title="@string/mesajyolla"
+        app:showAsAction="ifRoom" />
+
+</menu>

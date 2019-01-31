@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yenisi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:gravity="center_vertical"
+    android:textSize="15sp"
+    android:textColor="@android:color/white"
+    android:paddingStart="15dp"
+    android:foreground="?android:selectableItemBackground"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:background="#303030"
+    />

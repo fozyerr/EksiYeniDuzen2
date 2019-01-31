@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    tools:context="com.example.fatih.eksiyeniduzen.EntryActivity">
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView2"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8.0sp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:drawSelectorOnTop="true"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/yuklenmespin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yukleniyor"
+            android:textSize="14.5sp"
+            android:id="@+id/spintext"
+            android:layout_centerInParent="true"
+
+            />
+
+
+        <ProgressBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/progressarkaplan"
+            android:indeterminate="true"
+            android:minHeight="21dp"
+            android:maxHeight="21dp"
+            android:id="@+id/spinnn"
+
+            android:layout_toStartOf="@+id/spintext"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

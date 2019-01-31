@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/entryyapisiarkaplan"
+  >
+
+    <TextView
+        android:id="@+id/sorunsalBaslik"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="?android:selectableItemBackground"
+        android:textColor="@color/eksimavi"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sorunsalYanit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sorunsalBaslik" />
+
+    <TextView
+        android:id="@+id/entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/holo_green_light"
+        android:textIsSelectable="true"
+        android:textSize="13sp"
+        android:theme="@style/autot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ikii" />
+
+    <View
+        android:id="@+id/ikii"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sorunsalYanit" />
+
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/entry" />
+
+    <TextView
+        android:id="@+id/yazaradi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SplitLine_hor1" />
+
+    <TextView
+        android:id="@+id/entryzaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yazaradi" />
+
+
+    <ImageButton
+        android:id="@+id/eksioy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/artioy"
+        android:paddingEnd="10dp"
+
+        android:paddingStart="10dp"
+        android:src="@drawable/eksioy"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yazaradi" />
+
+    <TextView
+        android:id="@+id/eksioytext"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/eksioy"
+        android:gravity="center"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/eksioy"
+        app:layout_constraintEnd_toStartOf="@+id/eksioy"
+        app:layout_constraintTop_toTopOf="@+id/eksioy" />
+
+    <ImageButton
+        android:id="@+id/artioy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/eksioy"
+
+
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:src="@drawable/artioy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/eksioytext"
+        app:layout_constraintTop_toBottomOf="@id/yazaradi" />
+
+    <TextView
+        android:id="@+id/artioytext"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/artioy"
+
+        android:gravity="center"
+
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/artioy"
+        app:layout_constraintEnd_toStartOf="@id/artioy"
+        app:layout_constraintTop_toTopOf="@+id/artioy" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
