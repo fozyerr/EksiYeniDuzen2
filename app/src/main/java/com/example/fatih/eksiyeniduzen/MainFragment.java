@@ -106,6 +106,7 @@ public class MainFragment extends Fragment implements MainFragHaberlesme {
 
            liste.add("Bugün");
            liste.add("gündem");
+           liste.add("debe");
            liste.add("tarihte bugün");
 
            if(!getArguments().getString("cookie").equals("BOS"))
@@ -358,7 +359,7 @@ public class MainFragment extends Fragment implements MainFragHaberlesme {
                     mainfragInterface.spinnerselection(position);
                     //spinner.setSelection(position,false);
 
-                    if(position==2)
+                    if(position==3)
                     {
 
                        /* if(aramafab.getVisibility()==View.VISIBLE)

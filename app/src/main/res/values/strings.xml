@@ -23,6 +23,7 @@
     <string-array name="basliklar">
         <item>Bugün</item>
         <item>gündem</item>
+        <item>debe</item>
         <item>tarihte bugün</item>
         <item>spor</item>
         <item>ilişkiler</item>
@@ -59,6 +60,7 @@
     <string-array name="basliklarLogin">
         <item>Bugün</item>
         <item>gündem</item>
+        <item>debe</item>
         <item>tarihte bugün</item>
         <item>yazdıkları</item>
         <item>favladıkları</item>

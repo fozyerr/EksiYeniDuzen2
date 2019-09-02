@@ -161,7 +161,7 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
         {
             //Log.d("BasliklarFragOncreate",dizi[getArguments().getInt(KEY)-2]);
 
-            if(getArguments().getInt(KEY)==3)
+            if(getArguments().getInt(KEY)==4)
             {
                 FloatingActionButton actionButton= getActivity().findViewById(R.id.tarihsec);
 
@@ -177,8 +177,11 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
             StringBuilder yenisistemBaslikUrl=new StringBuilder();
             String birincilURL=dizi[getArguments().getInt(KEY)-2];
 
-            if(getArguments().getInt(KEY)==3)
+            if(getArguments().getInt(KEY)==4)
+            {
+                Log.d("pozisyon 4",birincilURL);
                 yenisistemBaslikUrl.append(birincilURL).append("&p=").append(sayfa);
+            }
             else
                 yenisistemBaslikUrl.append(birincilURL).append("?p=").append(sayfa);
 
@@ -225,11 +228,11 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
             {
                 //  adapter.bosalt();
 
-                if(getArguments().getInt(KEY)==3)
+                if(getArguments().getInt(KEY)==4)
                 {
                     Random ryil=new Random();
                     yil=ryil.nextInt(2017-1999)+1999;
-                    dizi[1]=tarihtebugunTemelUrl+"year="+yil;
+                    dizi[2]=tarihtebugunTemelUrl+"year="+yil;
 
                     Log.d("hangi yil geldi", String.valueOf(yil));
                 }
@@ -250,7 +253,7 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
                 LayoutInflater inflator = LayoutInflater.from(getActivity());
                 @SuppressLint("InflateParams") View goster = inflator.inflate(R.layout.sayfasecme, null);
                 final NumberPicker sayac =  goster.findViewById(R.id.sayisecici);
-                sayac.setMaxValue(2016);
+                sayac.setMaxValue(2019);
                 sayac.setMinValue(1999);
 
 
@@ -268,9 +271,9 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
                                 sayfa=1;
                                // adapter.bosalt();
                                 yil=sayac.getValue();
-                                dizi[1]=tarihtebugunTemelUrl+"year="+yil;
+                                dizi[2]=tarihtebugunTemelUrl+"year="+yil;
 
-                                new BaslikGetir(dizi[1],false,getArguments().getString("cookie"),false,loading,getArguments().getInt(KEY)
+                                new BaslikGetir(dizi[2],false,getArguments().getString("cookie"),false,loading,getArguments().getInt(KEY)
                                         ,sayfa,swipeRefreshLayout,BasliklarFragment.this).execute();
                                 loading=false;
 
@@ -307,6 +310,7 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
         dizi=new String[]
                 {
                         "https://eksisozluk.com/basliklar/gundem",
+                        "https://eksisozluk.com/debe",
                         "",
                         "https://eksisozluk.com/basliklar/kanal/spor",
                         "https://eksisozluk.com/basliklar/kanal/ili%C5%9Fkiler",
@@ -340,8 +344,8 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
                 };
 
         Random ryil=new Random();
-        yil=ryil.nextInt(2017-1999)+1999;
-        dizi[1]=tarihtebugunTemelUrl+"year="+yil;
+        yil=ryil.nextInt(2020-1999)+1999;
+        dizi[2]=tarihtebugunTemelUrl+"year="+yil;
 
     }
 
@@ -349,6 +353,7 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
         dizi=new String[]
                 {
                         "https://eksisozluk.com/basliklar/gundem",
+                        "https://eksisozluk.com/debe",
                         "",
                         "https://eksisozluk.com/basliklar/takipentry",
                         "https://eksisozluk.com/basliklar/takipfav",
@@ -387,11 +392,11 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
                 };
 
 
-        if(getArguments().getInt(KEY)==3)
+        if(getArguments().getInt(KEY)==4)
         {
             Random ryil=new Random();
-            yil=ryil.nextInt(2017-1999)+1999;
-            dizi[1]=tarihtebugunTemelUrl+"year="+yil;
+            yil=ryil.nextInt(2020-1999)+1999;
+            dizi[2]=tarihtebugunTemelUrl+"year="+yil;
 
             Log.d("hangi yil geldi", String.valueOf(yil));
         }
@@ -426,11 +431,11 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
                 {
                   //  adapter.bosalt();
 
-                    if(getArguments().getInt(KEY)==3)
+                    if(getArguments().getInt(KEY)==4)
                     {
                         Random ryil=new Random();
-                        yil=ryil.nextInt(2017-1999)+1999;
-                        dizi[1]=tarihtebugunTemelUrl+"year="+yil;
+                        yil=ryil.nextInt(2020-1999)+1999;
+                        dizi[2]=tarihtebugunTemelUrl+"year="+yil;
 
                         Log.d("hangi yil geldi", String.valueOf(yil));
                     }
@@ -491,7 +496,7 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
 
 
 
-                    if(getArguments().getInt(KEY)==3)
+                    if(getArguments().getInt(KEY)==4)
                     {
                         intent.putExtra("yonlendirme",true);
 
@@ -568,7 +573,7 @@ public class BasliklarFragment extends Fragment implements BaslikFragHaberlesme{
 
                         sayfa++;
 
-                        if(getArguments().getInt(KEY)==3)
+                        if(getArguments().getInt(KEY)==4)
                         {
                           //  dizi[1]=dizi[1]+"year="+yil;
 
